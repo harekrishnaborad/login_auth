@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- <link rel="stylesheet" href="../css/register.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+        <form id="container" class="container" action="/checkUsers" method="post">
+            <h1>Login</h1>
+            <div class="input_box">
+                <input type="text" placeholder="email" name="email" id="Username" required>
+                <i class='bx bxs-user'></i>
+                <p class="error_message">error message</p>
+            </div>
+
+            <div class="input_box">
+                <input type="password" placeholder="password" name="password" id="password" required>
+                <i class='bx bxs-lock-alt'></i>
+                <p class="error_message">error message</p>
+            </div>
+
+            <div class="remember_forgot">
+                <label for="hod"><input type="radio" name="role" id="hod" value="hod">HOD</label>
+                <label for="faculty"><input type="radio" name="role" id="faculty" value="faculty">FACULTY</label>
+                <p class="error_message">error message</p>
+                <a href="">Forgot password?</a>
+            </div>
+            
+            <button class="btn" type="submit">Login</button>
+
+            <div class="register_link">
+                <p>Dont have an account ? <a href="/">Register</a></p>
+            </div>
+
+        </form>
+    
+
+    <!-- <script src="../js/login.js" type="module"></script> -->
+</body>
+
+</html>
